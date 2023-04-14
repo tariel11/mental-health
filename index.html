@@ -15,30 +15,37 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <div class="img">
-                    <img src="./img/logo.svg" alt="logo">
-                </div>
-                <p>Mental health</p>
-            </div>
-            <ul>
-                <li><a href="#">Обо мне </a></li>
-                <li><a href="#">Работа со мной</a></li>
-                <li><a href="#">Связаться</a></li>
-                <li><button href="#">Начать</button></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <h1>ваше психическое здоровье имеет значение</h1>
-            <div class="words">
-                <p>Самое смешное желание — это желание нравиться всем</p>
-                <p>Живи своей собственной жизнью</p>
-                <p>Ты достаточна!</p>
-                <div class="appeal">
-                    <button>Записаться на прием</button>
-                    <div>
-                        <img src="./img/icons/appeal.png" alt="Записаться на прием">
+        <div class="container">
+            <div class="header">
+                <nav>
+                    <div class="logo">
+                        <div class="img">
+                            <img src="./img/logo.svg" alt="logo">
+                        </div>
+                        <p>Mental health</p>
+                    </div>
+                    <ul class="nav__items" >
+                        <li><a href="#">Обо мне </a></li>
+                        <li><a href="#">Работа со мной</a></li>
+                        <li><a href="#">Связаться</a></li>
+                        <li><a href="#" class="btn">Начать</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <h1>Ваше Психическое Здоровье Имеет Значение</h1>
+                    <div class="words">
+                        <div class="bg__header">
+                            <img src="./img/bg__header.png" alt="bg__header">
+                        </div>
+                        <p class="word word__1" >Самое смешное желание — <br> это желание нравиться всем</p>
+                        <p class="word word__2" >Живи своей собственной жизнью</p>
+                        <p class="word word__3" >Ты достаточна!</p>
+                        <a href="#" class="appeal word word__4" >
+                            <p>Записаться на прием</button>
+                            <div>
+                                <img src="./img/icons/appeal.png" alt="Записаться на прием">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -46,33 +53,38 @@
     </header>
 
     <footer>
-        <h2>Запись на прием</h2>
-        <div>
-            <div>
-                <a href="#"></a>
-                <a href="#"></a>
+        <div class="container">
+            <div class="footer">
+                <h2>Запись на прием</h2>
+                <div class="footer__top" >
+                    <div class="footer__links" >
+                        <a href="#" class="footer__link">Обо мне</a>
+                        <br>
+                        <a href="#" class="footer__link">Работа со мной</a>
+                    </div>
+                    <div class="footer__form" >
+                        <form action="#">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" name="name" id="name">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                            <button class="btn btn__appeal" type="submit" >Записаться</button>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__bottom">
+                    <ul class="footer__socials" >
+                        <li class="footer__social" ><a href="#"><img src="./img/icons/social.svg" alt="Инстаграмм"><p>Инстаграмм</p></a></li>
+                        <li class="footer__social" ><a href="#"><img src="./img/icons/social.svg" alt="Твиттер"><p>Твиттер</p></a></li>
+                    </ul>
+                    <ul class="footer__address" >
+                        <li>Адрес: Москва, Зубарев переулок, д.28</li>
+                        <li>Телефон: +7 499 430-08-23</li>
+                    </ul>
+                    <p>Designed by: MTY studio</p>
+                </div>
             </div>
-            <div>
-                <form action="#">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
-                    <button>Записаться</button>
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <ul>
-                <li><a href="#"><img src="./img/icons/social.svg" alt="Инстаграмм">Инстаграмм</a></li>
-                <li><a href="#"><img src="./img/icons/social.svg" alt="Твиттер">Твиттер</a></li>
-            </ul>
-            <ul>
-                <li>Адрес: Москва, Зубарев переулок, д.28</li>
-                <li>Телефон: +7 499 430-08-23</li>
-            </ul>
-            <p>Designed by: MTY studio</p>
         </div>
     </footer>
 </body>
