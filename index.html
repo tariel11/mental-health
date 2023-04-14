@@ -25,10 +25,10 @@
                         <p>Mental health</p>
                     </div>
                     <ul class="nav__items">
-                        <li><a href="#">Обо мне </a></li>
-                        <li><a href="#">Работа со мной</a></li>
-                        <li><a href="#">Связаться</a></li>
-                        <li><a href="#" class="btn">Начать</a></li>
+                        <li><a href="#about">Обо мне </a></li>
+                        <li><a href="#work">Работа со мной</a></li>
+                        <li><a href="#footer">Связаться</a></li>
+                        <li><a href="#footer" class="btn">Начать</a></li>
                     </ul>
                 </nav>
                 <div class="content">
@@ -40,7 +40,7 @@
                         <p class="word word__1">Самое смешное желание — <br> это желание нравиться всем</p>
                         <p class="word word__2">Живи своей собственной жизнью</p>
                         <p class="word word__3">Ты достаточна!</p>
-                        <a href="#" class="appeal word word__4">
+                        <a href="#footer" class="appeal word word__4">
                             <p>Записаться на прием</button>
                                 <div>
                                     <img src="./img/icons/appeal.png" alt="Записаться на прием">
@@ -52,7 +52,7 @@
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__content">
                 <h2>Обо мне</h2>
@@ -60,6 +60,8 @@
                     <div class="about__top--bg">
                         <img src="./img/bg__about.png" alt="bg__about">
                     </div>
+                    <div class="about__curcle"></div>
+                    <div class="about__lap"></div>
                     <p class="about__item about__item--1">
                         <span class="about__item--span">5+</span> <br>
                         Лет опыта работы
@@ -89,7 +91,7 @@
         </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
         <div class="container">
             <div class="work__content">
                 <h2>Работа со мной</h2>
@@ -154,7 +156,7 @@
                         <div class="work__text">
                             <h3>Если эти признаки про вас, то обращайтесь!</h3>
                         </div>
-                        <a href="#" class="appeal">
+                        <a href="#footer" class="appeal">
                             <p>Записаться на прием</button>
                                 <div>
                                     <img src="./img/icons/appeal.png" alt="Записаться на прием">
@@ -164,25 +166,24 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-    <footer>
+    <footer id="footer" >
         <div class="container">
             <div class="footer">
                 <h2>Запись на прием</h2>
                 <div class="footer__top">
                     <div class="footer__links">
-                        <a href="#" class="footer__link">Обо мне</a>
+                        <a href="#about" class="footer__link">Обо мне</a>
                         <br>
-                        <a href="#" class="footer__link">Работа со мной</a>
+                        <a href="#work" class="footer__link">Работа со мной</a>
                     </div>
                     <div class="footer__form">
                         <form action="#">
                             <label for="name">Ваше имя</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" required>
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                             <button class="btn btn__appeal" type="submit">Записаться</button>
                         </form>
                     </div>

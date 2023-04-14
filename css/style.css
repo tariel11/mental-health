@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
@@ -49,6 +53,12 @@ h3 {
     background: transparent;
     border: 1px solid #000;
     border-radius: 100px;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: #666;
+    color: #fff;
 }
 
 .btn__appeal {
@@ -95,13 +105,20 @@ nav {
     color: #222;
 }
 
-h1{
+h1 {
     font-size: 80px;
     font-weight: 800;
     font-family: 'Jost', sans-serif;
     line-height: 100px;
     text-align: center;
     color: #000;
+}
+
+h1::after {
+    content: url('/img/star.png');
+    position: relative;
+    left: 15px;
+    bottom: -20px;
 }
 
 .words {
@@ -120,14 +137,17 @@ h1{
     top: 40%;
     left: 0;
 }
+
 .word__2 {
     top: 15%;
     right: 0;
 }
+
 .word__3 {
     top: 40%;
     right: 0;
 }
+
 .word__4 {
     bottom: 5%;
     right: 0;
@@ -172,6 +192,7 @@ h1{
     top: 20%;
     left: 20%;
 }
+
 .about__item--2 {
     background-image: url("/img/icons/peoples.png");
     top: 10%;
@@ -219,7 +240,7 @@ h1{
 .work__box {
     display: grid;
     gap: 20px;
-    grid-template-rows: repeat(5, 1fr) ;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 5fr 1fr;
 }
 
@@ -233,6 +254,7 @@ h1{
 .work__row {
     justify-content: space-between;
 }
+
 .work__column {
     flex-direction: column;
     justify-content: space-between;
@@ -241,26 +263,32 @@ h1{
 .work__item--1 {
     background-color: #EFECFE;
 }
+
 .work__item--2 {
     background-color: #FFF7F1;
 }
+
 .work__item--3 {
     background-color: #EFECFE;
 }
+
 .work__item--4 {
     background-color: #FFF7F1;
     grid-row: 4 / 6;
 }
+
 .work__item--5 {
     background-color: #FFF7F1;
     grid-row: 1 / 3;
     grid-column: 2 / -1;
 }
+
 .work__item--6 {
     background-color: #EFECFE;
     grid-row: 3 / 5;
     grid-column: 2 / -1;
 }
+
 .work__item--7 {
     background-color: #E4BFF5;
     align-items: end;
