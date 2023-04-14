@@ -30,7 +30,15 @@ h2 {
     font-size: 48px;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 42px;
+    color: #000;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -130,6 +138,80 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+
+
+
+
+/* ABOUT */
+
+.about {
+    background: #F5F5F5;
+    padding: 30px 0 60px 0;
+}
+
+.about__top {
+    position: relative;
+    background-color: #FFE6B8;
+    border-radius: 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.about__item {
+    position: absolute;
+    padding: 20px 30px;
+    padding-top: 40px;
+    background-color: #fff;
+    color: #680706;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position-y: 15px;
+    background-position-x: center;
+}
+
+.about__item--1 {
+    background-image: url("/img/icons/check.png");
+    top: 20%;
+    left: 20%;
+}
+.about__item--2 {
+    background-image: url("/img/icons/peoples.png");
+    top: 10%;
+    right: 20%;
+}
+
+.about__item--3 {
+    background-image: url("/img/icons/smile.png");
+    top: 80%;
+    left: 20%;
+}
+
+.about__item--4 {
+    background-image: url("/img/icons/heart.png");
+    top: 70%;
+    right: 20%;
+}
+
+.about__item--span {
+    font-weight: 700;
+}
+
+
+.about__bottom {
+    padding: 45px 15%;
+    text-align: center;
+    background-color: #fff;
+    font-size: 20px;
+    color: #666;
+    border-radius: 30px;
+}
+
+.about__deck {
+    margin-bottom: 20px;
+}
+
+
+
 
 
 /* FOOTER */
