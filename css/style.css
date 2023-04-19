@@ -185,6 +185,8 @@ h1::after {
     background-repeat: no-repeat;
     background-position-y: 15px;
     background-position-x: center;
+    /* position: relative; */
+    z-index: 11;
 }
 
 .about__item--1 {
@@ -229,6 +231,33 @@ h1::after {
     margin-bottom: 20px;
 }
 
+.about__top--bg img {
+    position: relative;
+    z-index: 10;
+}
+
+.about__curcle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 20px solid #FECD74;
+    z-index: 9;
+}
+
+.about__lap {
+    position: absolute;
+width: 380px;
+height: 380px;
+top: 0;
+left: 50%;
+transform: translate(-50%, 35%);
+border-radius: 50%;
+background: #FED76A;
+}
 
 
 /* WORK */
